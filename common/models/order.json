@@ -1,0 +1,42 @@
+{
+  "name": "Order",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "creator": {
+      "type": "string",
+      "required": true
+    },
+    "createDateTime": {
+      "type": "date",
+      "required": true
+    },
+    "itemId": {
+      "type": "number",
+      "required": true
+    },
+    "count": {
+      "type": "number",
+      "required": true
+    },
+    "approver": {
+      "type": "string"
+    },
+    "approveDateTime": {
+      "type": "date"
+    },
+    "sender": {
+      "type": "string"
+    },
+    "sendDateTime": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

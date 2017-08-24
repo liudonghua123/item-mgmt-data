@@ -1,1 +1,8 @@
-{}
+{
+  "db": {
+    "name": "db",
+    "connector": "sqlite3",
+    "file": "data.db",
+    "debug": true
+  }
+}
