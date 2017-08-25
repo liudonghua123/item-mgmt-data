@@ -33,6 +33,14 @@
     },
     "sendDateTime": {
       "type": "date"
+    },
+    "isApproved": {
+      "type": "boolean",
+      "default": false
+    },
+    "isSended": {
+      "type": "boolean",
+      "default": false
     }
   },
   "validations": [],
