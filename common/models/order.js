@@ -43,7 +43,7 @@ module.exports = function(Order) {
   // PATCH->patchOrCreate(an alias for updateOrCreate), PUT->replaceOrCreate
   Order.beforeRemote('**', function(context, modelInstance, next) {
     debug(context.methodString, 'was invoked remotely');
-    if (context.methodString.endsWith('OrCreate')) {
+    if (context.methodString.endsWith('OrCreate') || context.methodString.endsWith('patchAttributes')) {
       // check isSended flag
       const isSended = context.req.body.isSended;
       const count = context.req.body.count;
